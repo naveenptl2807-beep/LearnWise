@@ -1,0 +1,20 @@
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment Variables & Keys
+.env
+*.env
+
+# IDE / Editor configs
+.vscode/
+.idea/
+
+!.env.example
