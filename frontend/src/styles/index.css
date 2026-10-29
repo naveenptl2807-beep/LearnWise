@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Learnwise — Warm Light Educational Theme
+   ========================================================================== */
+
+:root {
+  /* Strictly Light-Only Warm-Neutral Palette */
+  --bg-main: #F7F3EB;
+  --bg-card: #FFFDFA;
+  --bg-soft: #E8DFD0;
+  --bg-subtle: #F0EAE1;
+  --color-primary: #6B705C;
+  --color-primary-hover: #585C4C;
+  --color-primary-active: #484C3E;
+  --color-accent: #C6A98B;
+  --color-accent-hover: #B89979;
+  --text-main: #34362F;
+  --text-secondary: #77766C;
+  --text-muted: #959489;
+  --border-subtle: #E2DACD;
+  --border-strong: #D5CBB9;
+
+  /* Status Colors (Subtle, Non-Neon) */
+  --status-in-progress-bg: #EFE8DA;
+  --status-in-progress-text: #6B5B3E;
+  --status-mastered-bg: #E5EADF;
+  --status-mastered-text: #485E40;
+  --status-error-bg: #F8EBEB;
+  --status-error-text: #8E3A3A;
+  --status-error-border: #E8C5C5;
+
+  /* Typography */
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Geometry & Elevation */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --shadow-subtle: 0 1px 3px rgba(52, 54, 47, 0.04), 0 2px 6px rgba(52, 54, 47, 0.02);
+  --shadow-card: 0 2px 8px rgba(52, 54, 47, 0.05), 0 1px 2px rgba(52, 54, 47, 0.03);
+  --shadow-elevated: 0 8px 24px rgba(52, 54, 47, 0.08), 0 2px 6px rgba(52, 54, 47, 0.04);
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --header-height: 72px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Base Layout Structure */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-main);
+}
+
+.main-content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.page-content {
+  flex: 1;
+  padding: 2rem 2.5rem 3.5rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: 1.25rem 1rem 2.5rem;
+  }
+}
+

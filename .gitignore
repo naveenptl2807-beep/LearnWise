@@ -13,6 +13,11 @@ __pycache__/
 .env
 *.env
 
+# SQLite Databases
+*.db
+*.sqlite
+*.sqlite3
+
 # IDE / Editor configs
 .vscode/
 .idea/
